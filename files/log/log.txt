@@ -1,0 +1,5 @@
+john, ClientEvent, Add, 2019-11-28 07:05:03, ::1
+john, ClientEvent, View, 2019-11-28 07:05:05, ::1
+john, ClientEvent, Delete, 2019-11-28 07:05:10, ::1
+john, ClientEvent, View, 2019-11-28 07:05:12, ::1
+john, ClientEvent, View, 2019-11-28 07:05:16, ::1

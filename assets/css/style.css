@@ -1,0 +1,267 @@
+#sidebar-wrapper{
+  z-index: 1;
+  position:fixed;
+  width:250px;
+  height:100vh;
+  overflow-y: hidden;
+  background: #2c3e50;
+  color: white;
+  opacity: 0.9;
+  left: 0px;
+  transition: all 0.4s linear;
+}
+
+#tableHolder{
+  transition: all 0.7s linear;
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+
+#to_hide{
+  background: #E0E0E0;
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+
+
+#close_update_form{
+  float:right;
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  text-align: justify;
+
+  height: 35px;
+  width: 35px;
+}
+
+
+#sell_request{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+/* main content */
+#page-content-wrapper{
+  padding-left: 250px;
+
+  width: 100%;
+  position:absolute;
+transition: all 0.4s linear;
+}
+
+/* change the width of the sidebar to dispay */
+#wrapper.menuDispalyed #sidebar-wrapper{
+  width: 250px;
+  left: -250px;
+  transition: all 0.4s linear;
+}
+
+#wrapper.menuDispalyed #page-content-wrapper{
+  padding-left: 0px;
+  transition: all 0.4s linear;
+}
+
+/* sibar styling */
+.sidebar-nav{
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  font-family: serif;
+}
+
+.sidebar-nav li{
+  text-indent: 20px;
+  line-height: 60px;
+}
+
+.sidebar-nav li a{
+  display: block;
+  text-decoration: none; */
+  color: white;
+  border-bottom: 1px solid #6af;
+  transition: all 3s;
+}
+
+/* hover effect */
+.sidebar-nav li a:hover{
+  background: #66A085;
+  color: white;
+  cursor: pointer;
+  border-bottom: 2px solid yellow;
+  border-top: 1px solid yellow;
+  transition: background 2s, border-bottom,border-top 500ms;
+}
+
+
+#profile{
+  background: #3c3e5e;
+  width: 100%;
+  height: 20%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#breadcrump{
+  display:block;
+         width:30px;
+         height:5px;
+         background: #5b9;
+         margin:3px 0px;
+}
+
+#profile img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+
+}
+
+#header{
+  background: #2c3e50;
+  height: 85px;
+}
+
+#header h1{
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+#menu-toggle{
+  padding-top: 10px;
+}
+
+#milking_cow{
+  /* background: #B0BEC5; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+#production{
+  /* padding-top: 15px; */
+  padding-left: 20px;
+  /* padding-right: 20px; */
+}
+
+#statistics{
+  background: #9a1;
+  padding-left: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#menu-icon{
+  color: orange;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background: #555;
+    }
+}
+
+
+
+
+
+
+/* //Style sheet for add adding pigs and tools */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.wrapper {  width: 100%; }
+
+.contact-form{
+	/* max-width: 1100px; */
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 5px;
+	display: flex;
+	background: #2f4f4f;
+}
+.input-fields{
+	display: flex;
+	margin-top: 30px;
+	flex-direction: column;
+	margin-right: 7%;
+  /* border-left: 3px solid yellow; */
+	background: rgba(0,0,0,0.8);
+
+}
+.input2-fields{
+	display: flex;
+	margin-top: 30px;
+	flex-direction: column;
+	background: rgba(0,0,0,0.8);
+	}
+.input-fields,
+.input2-fields{
+	width: 50%;
+
+}
+.input-fields .input,
+.input2-fields .input{
+	margin: 10px 10px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #fff;
+	padding: 10px;
+	color: #c5ecfd;
+	width: 80%;
+	line-height: 30px;
+}
+.input-fields textarea{
+	margin-left: 10px;
+  margin-right: 10px;
+
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #c5ecfd;
+	padding: 10px 10px;
+	color: #c5ecfd;
+	width: 80%;
+
+}
+.input-fields textarea{
+	height: 120px;
+
+}
+::-webkit-input-placeholder{
+	color: #c5ecfd;
+	}
+::-moz-input-placeholder{
+	color: #c5ecfd;
+	}
+.btn{
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+	padding: 15px 10px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+
+
+}
+
+@media screen and (max-width: 600px){
+	.contact-form{
+		flex-direction: column;
+
+	}
+	.input-fields,
+	.input2-fields{
+		width: 100%;
+	}
+}
+
+.container.external {
+  margin-top: 50px;
+}
